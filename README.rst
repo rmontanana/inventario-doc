@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
-=======================================
+Documentación de la aplicación Inventario2
+==========================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Aplicación de control de inventario de un centro educativo
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+https://github.com/rmontanana/inventario2

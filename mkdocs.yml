@@ -1,0 +1,36 @@
+site_name: Inventario2
+theme:
+  name: readthedocs
+  highlightjs: true
+  locale: es
+nav:
+  - Instalación:
+      - "Pasos Previos": "instalacion/README.md"
+      - Asistente: "instalacion/asistente.md"
+  - Funcionamiento:
+      - Introducción: "funcionamiento/README.md"
+      - Maestros:
+          - Introducción: "funcionamiento/maestros.md"
+          - Ubicaciones: "funcionamiento/ubicaciones.md"
+          - Artículos: "funcionamiento/articulos.md"
+          - Elementos: "funcionamiento/elementos.md"
+          - Usuarios: "funcionamiento/usuarios.md"
+      - Inventario:
+          - Introducción: "funcionamiento/inventario.md"
+          - Ubicación: "funcionamiento/ubicacion.md"
+          - Artículo: "funcionamiento/articulo.md"
+          - Total: "funcionamiento/total.md"
+          - Descuadres: "funcionamiento/descuadres.md"
+      - Varios:
+          - Introducción: "funcionamiento/varios.md"
+          - Configuración: "funcionamiento/configuracion.md"
+          - Importación: "funcionamiento/importacion.md"
+          - Copia Datos: "funcionamiento/copia_datos.md"
+  - Apéndice:
+      - Introducción: "apendice/README.md"
+      - Base de datos:
+          - Principal: "apendice/base_de_datos.md"
+          - Crear una base de datos: "apendice/crear_base_de_datos.md"
+          - Configuración servidor: "apendice/configuracion_servidor.md"
+          - Conversión iso-8859-1 a utf8: "apendice/actualizacion_iso-8859-1_a_utf8.md"
+      - Utilidades: "apendice/sistema_operativo.md"
