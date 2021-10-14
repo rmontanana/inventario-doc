@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Importación - Inventario2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Importaci\u00f3n";
+    var mkdocs_page_input_path = "funcionamiento/importacion.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Inventario2</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" title="Escriba el término de búsqueda aquí" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Instalación</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../instalacion/">Pasos Previos</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../instalacion/asistente/">Asistente</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Funcionamiento</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../">Introducción</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Maestros</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../maestros/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ubicaciones/">Ubicaciones</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../articulos/">Artículos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../elementos/">Elementos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../usuarios/">Usuarios</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Inventario</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../inventario/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ubicacion/">Ubicación</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../articulo/">Artículo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../total/">Total</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../descuadres/">Descuadres</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Varios</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../varios/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuracion/">Configuración</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Importación</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../copia_datos/">Copia Datos</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Apéndice</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../apendice/">Introducción</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Base de datos</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../apendice/base_de_datos/">Principal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apendice/crear_base_de_datos/">Crear una base de datos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apendice/configuracion_servidor/">Configuración servidor</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apendice/actualizacion_iso-8859-1_a_utf8/">Conversión iso-8859-1 a utf8</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../apendice/sistema_operativo/">Utilidades</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Inventario2</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Documentos</a> &raquo;</li>
+    
+      
+        
+          <li>Funcionamiento &raquo;</li>
+        
+      
+        
+          <li>Varios &raquo;</li>
+        
+      
+    
+    <li>Importación</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="232-importacion">2.3.2 Importación</h2>
+<p>Esta opción puede ser interesante si queremos actualizar el inventario mediante la utilización de una hoja de cálculo.</p>
+<p>En primer lugar habrá que generar un archivo <em>csv</em> mediante cualquiera de las dos opciones de Inventario que son capaces de hacerlo, es decir, las opciones de <code>Ubicación</code> y <code>Artículo</code>.</p>
+<p>Una vez generado tendremos que utilizar cualquiera de los programas de hoja de cálculo para actualizar este archivo, podremos por tanto utilizar: <a href="http://www.libreoffice.org/">Libreoffice</a>, <a href="http://es.wikipedia.org/wiki/Microsoft_Excel">Microsoft Excel</a>, <a href="http://www.google.com/intl/es/drive/">Google Drive</a>, etc.</p>
+<p>Una vez que tengamos el archivo <em>csv</em> con la información actualizada (es importante no cambiar el formato al archivo cuando se guarde) tendremos que utilizar esta opción para subirlo a la aplicación.</p>
+<p><img alt="importacion1" src="../img/importacion1.png" /></p>
+<p>Cuando pulsamos <em>Aceptar</em> el archivo se comprueba para ver si tiene la estructura adecuada y en caso de que así sea nos mostrará la siguiente pantalla:</p>
+<p><img alt="importacion2" src="../img/importacion2.png" /></p>
+<p>En la primera columna indicaremos si queremos eliminar ese elemento. En caso afirmativo en la última columna aparecerá el mensaje de <code>-Baja-</code></p>
+<p>Si no se hace ningún cambio, en la última columna aparecerá el mensaje <code>Igual</code>.</p>
+<p>En el caso de que se haya cambiado el dato de <code>Cantidad real</code> nos aparecerá en la última columna la modificación que se realizará en el elemento. En el ejemplo anterior se restará uno al número de Pantallas COMM-TEC en el <code>Almacén</code> y se sumará 1 a la cantidad de sillones de profesor que hay en esa ubicación.</p>
+<p>Si pulsamos <em>Aceptar</em> el programa realizará las acciones que haya pendientes en el archivo <em>csv</em> en el ejemplo son 3 acciones. Si ocurre algún error al procesar el fichero <strong>no se hará ningún cambio</strong> en la base de datos.</p>
+<p>Al finalizar el proceso el programa nos mostrará el número de acciones realizadas en la base de datos.</p>
+<p><img alt="importacion3" src="../img/importacion3.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../copia_datos/" class="btn btn-neutral float-right" title="Copia Datos">Siguiente <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../configuracion/" class="btn btn-neutral" title="Configuración"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provisto por<a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../configuracion/" style="color: #fcfcfc">&laquo; Anterior</a></span>
+    
+    
+      <span><a href="../copia_datos/" style="color: #fcfcfc">Siguiente &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

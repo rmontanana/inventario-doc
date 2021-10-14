@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Pasos Previos - Inventario2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Pasos Previos";
+    var mkdocs_page_input_path = "instalacion/README.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Inventario2</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" title="Escriba el término de búsqueda aquí" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Instalación</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Pasos Previos</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#0-descargar-los-archivos-de-la-aplicacion">0. Descargar los archivos de la aplicación</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-copiar-los-archivos-en-una-ubicacion-a-la-que-tenga-acceso-el-usuario-con-el-que-se-ejecuta-el-servidor-apache-apache-_www-etc">1. Copiar los archivos en una ubicación a la que tenga acceso el usuario con el que se ejecuta el servidor Apache (apache, _www, etc.).</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-crear-un-directorio-temporal-y-dar-derechos-de-escritura-a-los-ficheros-de-configuracion">2. Crear un directorio temporal y dar derechos de escritura a los ficheros de configuración.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-crear-una-base-de-datos-en-mysql-con-el-siguiente-comando">3. Crear una base de datos en MySQL con el siguiente comando</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-dar-todos-los-derechos-de-acceso-a-esa-base-de-datos-a-un-usuario">4. Dar todos los derechos de acceso a esa base de datos a un usuario:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-conectarse-a-la-aplicacion-en-la-url-donde-se-ha-instalado">5. Conectarse a la aplicación en la url donde se ha instalado:</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="asistente/">Asistente</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Funcionamiento</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../funcionamiento/">Introducción</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Maestros</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/maestros/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/ubicaciones/">Ubicaciones</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/articulos/">Artículos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/elementos/">Elementos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/usuarios/">Usuarios</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Inventario</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/inventario/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/ubicacion/">Ubicación</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/articulo/">Artículo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/total/">Total</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/descuadres/">Descuadres</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Varios</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/varios/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/configuracion/">Configuración</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/importacion/">Importación</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../funcionamiento/copia_datos/">Copia Datos</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Apéndice</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../apendice/">Introducción</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Base de datos</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../apendice/base_de_datos/">Principal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../apendice/crear_base_de_datos/">Crear una base de datos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../apendice/configuracion_servidor/">Configuración servidor</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../apendice/actualizacion_iso-8859-1_a_utf8/">Conversión iso-8859-1 a utf8</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../apendice/sistema_operativo/">Utilidades</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Inventario2</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Documentos</a> &raquo;</li>
+    
+      
+        
+          <li>Instalación &raquo;</li>
+        
+      
+    
+    <li>Pasos Previos</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="1-instalacion">1. Instalación</h1>
+<p>Para instalar la aplicación basta con seguir estos pasos:</p>
+<h3 id="0-descargar-los-archivos-de-la-aplicacion">0. Descargar los archivos de la aplicación</h3>
+<p>Hay que descargar el paquete con los archivos correspondientes preferiblemente de la última versión estable de:</p>
+<p><a href="http://bitbucket.org/rmontanana/inventario2/downloads">http://bitbucket.org/rmontanana/inventario2/downloads</a></p>
+<h3 id="1-copiar-los-archivos-en-una-ubicacion-a-la-que-tenga-acceso-el-usuario-con-el-que-se-ejecuta-el-servidor-apache-apache-_www-etc">1. Copiar los archivos en una ubicación a la que tenga acceso el usuario con el que se ejecuta el servidor Apache (apache, _www, etc.).</h3>
+<pre><code>mkdir Inventario
+cd Inventario
+unizp ../1.02.zip
+o
+tar xvzf ../1.02.tgz
+</code></pre>
+<h3 id="2-crear-un-directorio-temporal-y-dar-derechos-de-escritura-a-los-ficheros-de-configuracion">2. Crear un directorio temporal y dar derechos de escritura a los ficheros de configuración.</h3>
+<pre><code>mkdir tmp
+mkdir img.data
+chown apache tmp img.data
+chown apache inc/configuracion.inc
+chown apache inc
+</code></pre>
+<h3 id="3-crear-una-base-de-datos-en-mysql-con-el-siguiente-comando">3. Crear una base de datos en MySQL con el siguiente comando</h3>
+<pre><code>create database Inventario character set utf8 collate utf8_spanish_ci;
+</code></pre>
+<h3 id="4-dar-todos-los-derechos-de-acceso-a-esa-base-de-datos-a-un-usuario">4. Dar todos los derechos de acceso a esa base de datos a un usuario:</h3>
+<pre><code>grant all on Inventario.* to usuario identified by "contraseña";
+</code></pre>
+<h3 id="5-conectarse-a-la-aplicacion-en-la-url-donde-se-ha-instalado">5. Conectarse a la aplicación en la url donde se ha instalado:</h3>
+<pre><code>http://&lt;url&gt;
+</code></pre>
+<p>Al hacer esto se arrancará automáticamente el programa de instalación con el que terminaremos de configurar la aplicación.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="asistente/" class="btn btn-neutral float-right" title="Asistente">Siguiente <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provisto por<a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="asistente/" style="color: #fcfcfc">Siguiente &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

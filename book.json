@@ -1,0 +1,15 @@
+{
+    "title": false,
+    "description": null,
+    "links": {
+        "home": "http://inventario.rmontanana.es",
+        "about": null,
+        "issues": false,
+        "contribute": false,
+        "sharing": {
+            "google": null,
+            "facebook": null,
+            "twitter": null
+        }
+    }
+}
